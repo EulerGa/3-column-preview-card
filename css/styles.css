@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+    border-radius: 0.5em;
+    overflow: hidden;
+    background-color: var(--very-light-gray-background-headings-buttons);
+    width: 50em;
+    margin: 20% auto;
+}
+ .container .card {
+    padding: 5%;
+    position: relative;
+
+}
+.container .card > h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    padding-bottom: 1em;
+    color: var(--very-light-gray-background-headings-buttons);
+}
+.container .card > p {
+    font-size: 0.9em;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--transparent-white-paragraphs);
+    line-height: 1.8em;
+    padding-bottom: 9em;
+}
+.container .card > img {
+   display: block;
+   padding-bottom: 2.4em; 
+}
+
+.container .sedans {
+    background-color: var(--bright-orange);
+}
+.container .suvs {
+    background-color: var(--dark-cyan);
+}
+.container .luxury {
+background-color: var(--very-dark-cyan);
+}
+
+.container .card button {
+    position: absolute;
+   left: 15%;
+   bottom: 10%;
+   background-color: var(--very-light-gray-background-headings-buttons);
+   font-family: 'Lexend Deca', sans-serif;
+   padding: 1em  2em;
+   border-radius: 2em;
+   cursor:pointer;
+}
+.container .sedans button {
+    color: var(--bright-orange);
+    border: none;
+}
+.container .suvs button {
+    color: var(--dark-cyan);
+    border: none;
+}
+.container .luxury button {
+    color: var(--very-dark-cyan);
+    border:none;
+}
+
+.container .sedans button:hover {
+    color: var(--transparent-white-paragraphs);
+    border: 0.2em solid var(--transparent-white-paragraphs);
+    background-color: var(--bright-orange);
+}
+.container .suvs button:hover {
+    color: var(--transparent-white-paragraphs);
+    border: 0.2em solid var(--transparent-white-paragraphs);
+    background-color:var(--dark-cyan) ;
+}
+.container .luxury button:hover {
+    color: var(--transparent-white-paragraphs);
+    border: 0.2em solid var(--transparent-white-paragraphs);
+    background-color: var(--very-dark-cyan);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+@media (max-width:900px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 20em;
+        margin: 20% auto;
+    }
+     .container .card {
+        padding: 10%;
+        position: relative;
+    
+    } 
+    .container .card button {
+     
+       left: 10%;
+     
+    }
+    
+}
